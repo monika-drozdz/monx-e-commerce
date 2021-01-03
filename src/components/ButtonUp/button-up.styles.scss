@@ -1,0 +1,31 @@
+$color-footer: #494949;
+$color-pink: #C59B98;
+$color-dark-pink: #580117;
+$color-light: #f2f2f2;
+$color-turq: #004C4E;
+$color-yellow: #C57B0C;
+
+.btn-up {
+    width: 40px;
+    height: 40px;
+    position: sticky;
+    bottom: 20px;
+    left: 20px;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-dark-pink;
+   
+
+    &:hover {
+        cursor: pointer;
+        align-items: flex-start;
+    }
+    
+    
+}
+
+.icon-up {
+    color: $color-light;
+}

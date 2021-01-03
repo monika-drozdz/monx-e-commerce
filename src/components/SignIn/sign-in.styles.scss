@@ -1,0 +1,22 @@
+$color-footer: #494949;
+
+.sign-in {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    margin: 200px;
+    font-family: 'Unica One';
+    
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .title {
+      margin: 10px 0;
+    }
+  }
+  
+h2 {
+  color: $color-footer;
+}  

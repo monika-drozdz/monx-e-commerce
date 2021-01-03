@@ -1,0 +1,12 @@
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+::selection {
+  color: #F2F2F2;
+  background: #C59B98;
+}

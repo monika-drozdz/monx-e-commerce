@@ -1,0 +1,35 @@
+$color-footer: #494949;
+$color-pink: #C59B98;
+$color-dark-pink: #580117;
+$color-light: #f2f2f2;
+// .logo {
+//     width: 250px;
+//     border-radius: 0 0 400px 400px; 
+//     width: 50px;
+//     border-radius: 0 0 200px 200px; 
+//     background: #F0EBE7;
+//     transform: translate(-50%, -50%);  
+//     position: absolute;
+//     z-index: 10;
+//     margin-left: auto;
+//     margin-right: auto;
+//     // margin-top: 2%; 
+//     top: 2%; 
+//     left: 50%;
+//     text-align: center;
+    
+//   }
+  
+  
+  .monx {
+    height: 30px;
+    position: absolute;
+    margin-top: 25px;
+    color: $color-light;
+    margin-left: 50%;
+    margin-bottom: 100px;
+    transform: translate(-50%, -50%); 
+    fill: $color-light;
+    z-index: 2000;
+    text-align: center;  
+  } 

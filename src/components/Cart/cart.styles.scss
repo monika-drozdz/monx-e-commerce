@@ -1,0 +1,60 @@
+$color-pink: #C59B98;
+$color-dark-pink: #580117;
+$color-footer: #494949;
+$color-light-gray: #C4C4C4;
+$color-yellow: #D9AF1A;
+
+.cart-container {
+    width: 80%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-column-gap: 20px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    font-family: "Unica One";
+    color: $color-footer;
+    
+}
+
+.row {
+    display: grid;
+    min-height: 70px;
+    grid-template-columns: repeat(5, 1fr);
+    // grid-column-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid $color-light-gray;
+    &.row-last {
+        border: none;
+    }
+}
+
+h3 {
+    color: $color-dark-pink;
+}
+
+
+.image-container {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.delete-icon {
+    color: $color-pink;
+    &:hover {
+        cursor: pointer;
+    fill: $color-dark-pink;
+    }
+    
+}
