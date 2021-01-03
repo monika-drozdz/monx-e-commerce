@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 import './logo.styles.scss';
+
 import {ReactComponent as LogoMonx} from "../../assets/logo.svg";
 
 const Logo = () => (

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import CardItem from '../CardItem/cardItem.component';
-import salt from '../../assets/salt.jpg'
-import {ReactComponent as Logo} from "../../assets/logo.svg";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
-// import {productData} from '../../data/product-data.js';
 
 import './salt-page.styles.scss';
+
+import CardItem from '../CardItem/cardItem.component';
+
+import salt from '../../assets/salt.jpg'
+
 
 class SaltPage extends Component {
     constructor(props) {
@@ -68,23 +68,18 @@ class SaltPage extends Component {
     } 
     render() { 
         return ( 
-   <div>      
-{/* <div className="logo">
-      <Link to='/'>
-          <Logo className="monx"/>
-        </Link>
-    </div> */}
-
-<div className="products-preview">
-    {
-        this.state.items.map((item, idx) => (
-            <CardItem key={idx}
-            name={item.name}
-            price={item.price}
-            image={item.image}/>
-        ))
-    }
-</div></div>
+            <div>      
+                <div className="products-preview">
+                {
+                    this.state.items.map((item, idx) => (
+                        <CardItem key={idx}
+                        name={item.name}
+                        price={item.price}
+                        image={item.image}/>
+                ))
+                }
+                </div>
+            </div>
 
          );
     }
