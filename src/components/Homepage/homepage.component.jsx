@@ -67,7 +67,7 @@ class Homepage extends Component {
     <div className="subheader">
         <LineLeft/>
         <div className="mini-header">
-          zapewniamy jednak bez tralalamy
+          zapewniamko
           </div>
         <LineRight/>
     </div> 
