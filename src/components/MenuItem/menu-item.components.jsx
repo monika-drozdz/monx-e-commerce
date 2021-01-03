@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 import './menu-item.styles.scss';
+
 import CartButton from '../CartButton/cartButton.component';
 
 const MenuItem = ( {name, image } ) => (
