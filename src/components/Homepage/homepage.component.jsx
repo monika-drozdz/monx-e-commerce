@@ -30,10 +30,10 @@ class Homepage extends Component {
           {
               this.props.items.slice(0,3).map((item, idx) => (
                   <Link key={item.idx} to={`/swiece/${idx + 1}`} style={{ textDecoration: "none"}}>
-                      <CardItem key={item.idx}
+                      {/* <CardItem key={item.idx}
                       name={item.name}
                       price={item.price}
-                      image={item.image}/>
+                      image={item.image}/> */}
                   </Link>
               ))
           }
