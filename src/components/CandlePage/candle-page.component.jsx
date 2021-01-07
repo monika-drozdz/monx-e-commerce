@@ -17,10 +17,10 @@ const CandlePage = ({candles}) => (
     <div className="products-preview">
         {
             candles.items.map(( item ) => (
-                <Link key={item.id} to={`/swiece/${item.id + 1}`} style={{ textDecoration: "none"}}>
+                // <Link key={item.id} to={`/swiece/${item.id + 1}`} style={{ textDecoration: "none"}}>
                     <CardItem key={item.id}
                     item={ item } />
-                </Link>
+                // </Link>
             ))
         }
 

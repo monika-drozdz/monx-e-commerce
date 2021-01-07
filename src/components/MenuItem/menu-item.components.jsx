@@ -6,8 +6,10 @@ import CartButton from '../CartButton/cartButton.component';
 
 const MenuItem = ( {name, image } ) => (
         <div className="menu-item">
-            <div className="background">
-                <img className="menu-image" src={image} alt=""/>
+            <div className="menu-image" 
+            style={{
+                backgroundImage: `url(${image})`,
+            }}>
             </div>
             <div className="content">
             <CartButton>{name}</CartButton>

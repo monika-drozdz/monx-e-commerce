@@ -4,15 +4,26 @@ import "./cardItem.styles.scss";
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 //import ProductPage from '../ProductPage/product-page.component';
-const CardItem = ({ item }) => {
+
+import { connect } from 'react-redux';
+import { addItem } from '../../redux/cart/cart.actions';
+
+const CardItem = ({ item, addItem }) => {
     const { name, price, imageUrl } = item;
+    
     return(
         <div className="card">    
             <div className="card-icons">
                 <FavoriteBorderIcon style={{ fontSize: 30 }} className="fav-shop-icon"/>
-                <ShoppingCartOutlinedIcon style={{ fontSize: 30 }} className="fav-shop-icon"/>
+                <ShoppingCartOutlinedIcon onClick={() => addItem(item)} style={{ fontSize: 30 }} className="fav-shop-icon"/>
             </div>
-            <img className="card-image" src={`${process.env.PUBLIC_URL}${imageUrl}`} alt=""/>
+            <div className="card-image"
+            style={{
+                backgroundImage: `url(${process.env.PUBLIC_URL}${imageUrl})`,
+              }}
+            >
+            </div>
+            
             <div className="card-content">
                 <span>{name}</span>
                 <span style={{color:"#C1745F"}}>{price}</span>
@@ -23,6 +34,9 @@ const CardItem = ({ item }) => {
     );
 }
 
+const mapDispatchToProps = dispatch => ({
+    addItem: item => dispatch(addItem(item))
+})
 
-export default CardItem;
+export default connect(null, mapDispatchToProps)(CardItem);
 
