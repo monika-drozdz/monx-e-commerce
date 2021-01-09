@@ -26,7 +26,7 @@ const CardItem = ({ item, addItem }) => {
             
             <div className="card-content">
                 <span>{name}</span>
-                <span style={{color:"#C1745F"}}>{price}</span>
+                <span style={{color:"#C1745F"}}>{price}PLN</span>
             </div>
         </div>
         // <Route exact path="/swiece/:key" render={(props) => <ProductPage {...props} items={this.props.items}/>}/>

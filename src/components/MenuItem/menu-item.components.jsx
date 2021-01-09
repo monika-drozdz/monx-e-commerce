@@ -2,7 +2,7 @@ import React from 'react';
 
 import './menu-item.styles.scss';
 
-import CartButton from '../CartButton/cartButton.component';
+import CategoryButton from '../CategoryButton/category-button.component';
 
 const MenuItem = ( {name, image } ) => (
         <div className="menu-item">
@@ -12,7 +12,7 @@ const MenuItem = ( {name, image } ) => (
             }}>
             </div>
             <div className="content">
-            <CartButton>{name}</CartButton>
+            <CategoryButton>{name}</CategoryButton>
             </div>
         </div>
 );

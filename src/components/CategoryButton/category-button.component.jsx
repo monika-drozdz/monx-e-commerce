@@ -1,5 +1,5 @@
 import React from 'react';
-import './cartButton.styles.scss'
+import './category-button.styles.scss'
 
 const CartButton = ({children}) => (
     <div className="buttons">

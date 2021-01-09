@@ -9,9 +9,11 @@ $color-light-gray: #C4C4C4;
     border-bottom: 1px solid $color-light-gray;
     
   
-    img {
+    .cart-image {
       width: 30%;
-      
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
     }
   
     .item-details {
