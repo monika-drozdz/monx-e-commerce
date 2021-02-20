@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import "./cardItem.styles.scss";
+import "./collection-item.styles.scss";
 //import {Route, Link} from 'react-router-dom';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-//import ProductPage from '../ProductPage/product-page.component';
+import ProductPage from '../ProductPage/product-page.component';
 
+import { Switch, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addItem } from '../../redux/cart/cart.actions';
 
-const CardItem = ({ item, addItem }) => {
-    const { name, price, imageUrl } = item;
-    
+const CollectionItem = ({ item, addItem, history }) => {
+    const { id, name, price, imageUrl } = item;
+    console.log(item)
     return(
         <div className="card">    
             <div className="card-icons">
-                <FavoriteBorderIcon style={{ fontSize: 30 }} className="fav-shop-icon"/>
+                <FavoriteBorderIcon onClick={() => history.push(`/swiece/${id}`)} style={{ fontSize: 30 }} className="fav-shop-icon"/>
                 <ShoppingCartOutlinedIcon onClick={() => addItem(item)} style={{ fontSize: 30 }} className="fav-shop-icon"/>
             </div>
             <div className="card-image"
@@ -28,9 +29,10 @@ const CardItem = ({ item, addItem }) => {
                 <span>{name}</span>
                 <span style={{color:"#C1745F"}}>{price}PLN</span>
             </div>
+            {/* <Switch>
+                <Route exact path="/swiece/:id" render={(props) => <ProductPage {...props} item={this.props.item}/>}/>
+            </Switch> */}
         </div>
-        // <Route exact path="/swiece/:key" render={(props) => <ProductPage {...props} items={this.props.items}/>}/>
-        // {/* </Link> */}
     );
 }
 
@@ -38,5 +40,5 @@ const mapDispatchToProps = dispatch => ({
     addItem: item => dispatch(addItem(item))
 })
 
-export default connect(null, mapDispatchToProps)(CardItem);
+export default withRouter(connect(null, mapDispatchToProps)(CollectionItem));
 

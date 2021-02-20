@@ -1,0 +1,48 @@
+$color-pink: #C59B98;
+$color-dark-pink: #580117;
+$color-footer: #494949;
+$color-light-gray: #C4C4C4;
+$color-yellow: #D9AF1A;
+
+.cart-container {
+    width: 75%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px auto 100px;
+    font-family: "Unica One";
+    color: $color-footer;
+   
+    .row {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $color-footer;
+    }
+    
+    
+    .header-row {
+        width: 21%;
+        display: flex; 
+        justify-content: center;
+        color: $color-dark-pink;
+        &:last-child {
+            width: 16%; 
+        }
+    }
+
+    .total {
+        margin-top: 30px;
+        margin-left: auto;
+        font-size: 36px;
+      }
+    
+}
+
+
+
+
+
+

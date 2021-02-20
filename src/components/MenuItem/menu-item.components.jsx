@@ -1,20 +1,20 @@
 import React from 'react';
 
 import './menu-item.styles.scss';
-
+import { withRouter } from 'react-router-dom';
 import CategoryButton from '../CategoryButton/category-button.component';
 
-const MenuItem = ( {name, image } ) => (
-        <div className="menu-item">
+const MenuItem = ( {title, imageUrl, linkUrl, history, match } ) => (
+        <div className="menu-item" onClick={()=>history.push(`${match.url}${linkUrl}`)}>
             <div className="menu-image" 
             style={{
-                backgroundImage: `url(${image})`,
+                backgroundImage: `url(${imageUrl})`,
             }}>
             </div>
             <div className="content">
-            <CategoryButton>{name}</CategoryButton>
+            <CategoryButton >{title}</CategoryButton>
             </div>
         </div>
 );
 
- export default MenuItem;
+ export default withRouter(MenuItem);

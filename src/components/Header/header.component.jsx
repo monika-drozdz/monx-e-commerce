@@ -5,9 +5,9 @@ import "./header.styles.scss"
 import SearchIcon from '@material-ui/icons/Search';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
-
-import CartDropdown from '../../components/CartDropdown/cart-dropdown.component';
-import CartIcon from '../../components/CartIcon/cart-icon.component';
+import Logo from '../Logo/logo.component'
+import CartDropdown from '../CartDropdown/cart-dropdown.component';
+import CartIcon from '../CartIcon/cart-icon.component';
 
 import { Link } from "react-router-dom";
 
@@ -20,8 +20,11 @@ console.log(hidden);
 return (
 
   <div className="header">
+    <Link to={'/'}><Logo/></Link>
     <div className="logo-container">
+    
       <div className="icons">
+        
         <div className="search-container">
           <input id="search" name="search" type="text" placeholder="Szukaj"/>
         <SearchIcon className="search-icon" style={{ fontSize: 20 }} />
@@ -40,7 +43,7 @@ return (
     <div className="navbar">
     
       <div className="category">
-          <Link to='/swiece'>
+          <Link to='/shop/candles'>
             <div className="nav-link">
               ŚWIECE</div>
           </Link>
@@ -48,7 +51,7 @@ return (
       </div>
 
       <div className="category">
-          <Link to='/sole'>
+          <Link to='/shop/salts'>
             <div className="nav-link">
               SOLE
             </div>
@@ -56,7 +59,7 @@ return (
       </div>
 
       <div className="category">
-          <Link to='/kule'>
+          <Link to='/shop/bathbombs'>
             <div className="nav-link">
               KULE
             </div>
@@ -64,7 +67,7 @@ return (
       </div>
 
       <div className="category">
-          <Link to='/akcesoria'>
+          <Link to='/shop/akcesoria'>
             <div className="nav-link">
               AKCESORIA
             </div>
@@ -72,7 +75,7 @@ return (
       </div>
 
       <div className="category">
-          <Link to='/inne'>
+          <Link to='/shop/inne'>
             <div className="nav-link">
             INNE
             </div>

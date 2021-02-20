@@ -20,16 +20,22 @@ $color-light: #f2f2f2;
     
 //   }
   
-  
-  .monx {
-    height: 30px;
+  .logo {
     position: absolute;
+    z-index: 100;
     margin-top: 25px;
-    color: $color-light;
     margin-left: 50%;
     margin-bottom: 100px;
     transform: translate(-50%, -50%); 
+  }
+  .monx {
+    height: 30px;
+    
+   
+    color: $color-light;
+    
+    
     fill: $color-light;
-    z-index: 2000;
+    
     text-align: center;  
   } 
