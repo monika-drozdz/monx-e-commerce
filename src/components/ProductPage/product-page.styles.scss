@@ -36,13 +36,13 @@ $color-pink: #C59B98;
 }
 
 .description-container {
-    
+
     height: 78%;
     display: flex;
     flex-direction: column;
-    
+
 }
- 
+
 .product-title {
     height: 10%;
     font-size: 30px;
@@ -60,7 +60,7 @@ $color-pink: #C59B98;
     height: 80%;
     font-family: 'Cutive Mono', monospace;
     font-size: 15px;
-    
+
     span {
         font-size: 12px;
         font-style: italic;
@@ -74,46 +74,44 @@ $color-pink: #C59B98;
     align-items: flex-end;
 }
 
-.qty-button {
-    width: 130px;
-    height: 48px;
-    // border: 1px solid #c4c1c1;
-    margin-right: 20px;
-    display: flex;
-    justify-content: space-between;
-}
+// .qty-button {
+//     width: 130px;
+//     height: 48px;
+//     border: 1px solid #c4c1c1;
+//     margin-right: 20px;
+//     display: flex;
+//     justify-content: space-between;
+// }
 
-.minus-plus-btn {
-    width: 30%;
-    border: none;
-    text-decoration: none;
-    font-family: 'Unica One', cursive;
-    font-size: 25px;
-    color: $color-pink;
-    background-color: #F2F2F2;
-    text-align: center;
-    
-    // border: 1px solid #c4c1c1;
-  
-    margin: auto;
-    &:hover {
-        cursor: pointer;
-        color: $color-dark-pink;
-    }
-    &:focus {
-        outline: none;
-    }
-}
+// .minus-plus-btn {
+//     width: 30%;
+//     text-decoration: none;
+//     font-family: 'Unica One', cursive;
+//     font-size: 25px;
+//     color: $color-pink;
+//     background-color: #F2F2F2;
+//     text-align: center;
+//     border: 1px solid #c4c1c1;
 
-.qty {
-    width: 30%;
-    font-family: 'Unica One', cursive;
-    font-size: 24px;
-    text-align: center;
-    margin: auto;
-    
+//     margin: auto;
+//     &:hover {
+//         cursor: pointer;
+//         color: $color-dark-pink;
+//     }
+//     &:focus {
+//         outline: none;
+//     }
+// }
 
-}
+// .qty {
+//     width: 30%;
+//     font-family: 'Unica One', cursive;
+//     font-size: 24px;
+//     text-align: center;
+//     margin: auto;
+
+
+// }
 
 .star-icon:hover {
     cursor: pointer;

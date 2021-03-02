@@ -23,7 +23,7 @@ import SectionHeader from '../sectionHeader/sectionHeader.components';
 const Homepage = () => (
 <div className="app">
         <SimpleSlider className="slider"/>
-        <SectionHeader>NOWOŚCI</SectionHeader>
+        {/* <SectionHeader>NOWOŚCI</SectionHeader>
         <div className="card-preview">
           {/* {
               collection.slice(0,3).map((item) => (
@@ -32,8 +32,8 @@ const Homepage = () => (
                   // </Link>
               ))
           } */}
-        </div>
-        <SectionHeader>KATEGORIE</SectionHeader>
+        {/* </div> */} 
+        <SectionHeader isDirectory>KATEGORIE</SectionHeader>
         <Directory />
         <SectionHeader>ZAPEWNIAMY</SectionHeader>
         <div className="banner">

@@ -1,5 +1,6 @@
 $color-pink: #C59B98;
 $color-dark-pink: #580117;
+$color-yellow: #d9af1a;
 
 .custom-button {
     min-width: 165px;
@@ -22,18 +23,20 @@ $color-dark-pink: #580117;
       background-color: #4285f4;
       color: white;
       &:hover {
-        background-color: #357ae8;
+        background-color: white;
         border: none;
       }
     }
 
+    &.go-to-checkout {
+      background-color: $color-pink
+    }
   
     
 
     &:hover {
       background-color: white;
       color: $color-dark-pink;
-      border: 1px solid $color-dark-pink;
     }
 
     &:focus {

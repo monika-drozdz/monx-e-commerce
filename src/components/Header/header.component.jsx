@@ -30,8 +30,8 @@ return (
         <SearchIcon className="search-icon" style={{ fontSize: 20 }} />
           </div>
         <Link to="/favourite" className="icon" style={{ color: "#f2f2f2", textDecoration: "none" }}><FavoriteBorderIcon className="icon" style={{ fontSize: 20 }}/></Link>
-        <CartIcon/>
         <Link to="/signin" className="icon" style={{ color: "#f2f2f2", textDecoration: "none" }} ><AccountCircleOutlinedIcon className="icon" style={{ fontSize: 20 }}/></Link>
+        <CartIcon/>
       </div> 
       {
         hidden ? null :
