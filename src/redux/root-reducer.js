@@ -7,6 +7,7 @@ import detailsReducer from './details/details.reducer';
 import directoryReducer from './directory/directory.reducer';
 import shopReducer from './shop/shop.reducer';
 
+
 const persistConfig = {
     key: 'root',
     storage,
@@ -19,6 +20,7 @@ const rootReducer = combineReducers({
     details: detailsReducer,
     directory: directoryReducer,
     shop: shopReducer,
+    
 });
 
 export default persistReducer(persistConfig, rootReducer);

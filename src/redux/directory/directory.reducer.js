@@ -1,6 +1,6 @@
 import bathBombs from '../../assets/bathBombs.jpg';
 import akcesoria from '../../assets/akcesoria.jpg';
-import candle from '../../assets/candle.jpg';
+import candle from '../../assets/candle-directory.jpg';
 import product from '../../assets/salt-sloik.jpg';
 
 const INITIAL_STATE = {
@@ -25,9 +25,9 @@ const INITIAL_STATE = {
         },
         {
             id: "4",
-            title: "AKCESORIA",
+            title: "ZAPACHY",
             imageUrl: `${akcesoria}`, 
-            linkUrl: 'shop/akcesoria',
+            linkUrl: 'shop/zapachy',
         },
     ]
 }

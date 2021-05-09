@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './checkout-page.styles.scss';
 
@@ -7,17 +7,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors';
 
 import CustomButton from '../CustomButton/custom-button.component';
-import Logo from '../Logo/logo.component';
-import { Link } from 'react-router-dom';
-
 import CheckoutItem from '../CheckoutItem/checkout-item.component';
-
-
-import candle from '../../assets/candle.jpg'
-import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
-
-import AddIcon from '@material-ui/icons/Add';
-import RemoveIcon from '@material-ui/icons/Remove';
 
 const CheckoutPage = ({ cartItems, total }) => (
    

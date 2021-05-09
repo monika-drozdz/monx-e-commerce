@@ -9,14 +9,19 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addItem } from '../../redux/cart/cart.actions';
 
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 const CollectionItem = ({ item, addItem, history }) => {
     const { id, name, price, imageUrl } = item;
+    
     console.log(item)
     return(
         <div className="card">    
-            <div className="card-icons">
-                <FavoriteBorderIcon onClick={() => history.push(`/swiece/${id}`)} style={{ fontSize: 30 }} className="fav-shop-icon"/>
-                <ShoppingCartOutlinedIcon onClick={() => addItem(item)} style={{ fontSize: 30 }} className="fav-shop-icon"/>
+            <div className="card-icons" onClick={()=>{ addItem(item); toast.dark("Dodano do koszyka!")}}
+              >
+                {/* <FavoriteBorderIcon onClick={() => history.push(`/swiece/${id}`)} style={{ fontSize: 30 }} className="fav-shop-icon"/> */}
+                <ShoppingCartOutlinedIcon  style={{ fontSize: 30 }} className="fav-shop-icon"/>
             </div>
             <div className="card-image"
             style={{
@@ -32,6 +37,7 @@ const CollectionItem = ({ item, addItem, history }) => {
             {/* <Switch>
                 <Route exact path="/swiece/:id" render={(props) => <ProductPage {...props} item={this.props.item}/>}/>
             </Switch> */}
+             <ToastContainer position="bottom-right" />
         </div>
     );
 }

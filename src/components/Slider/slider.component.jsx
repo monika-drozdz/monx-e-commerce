@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
-
+import {Link} from 'react-router-dom';
 import CustomButton from '../../components/CustomButton/custom-button.component';
 
 class SimpleSlider extends Component {
@@ -26,7 +26,10 @@ class SimpleSlider extends Component {
               <p className="text">
               musujące kule do kąpieli
               </p>
-              <CustomButton>Zobacz</CustomButton>
+              <Link to='/shop/bathbombs'>
+                <CustomButton>Zobacz</CustomButton>
+              </Link>
+                
             </div></div>
           
 
@@ -35,7 +38,9 @@ class SimpleSlider extends Component {
               <p className="text">
               Nawilżająca sól do kąpieli
               </p>
+              <Link to='/shop/salts'>
               <CustomButton>Zobacz</CustomButton>
+              </Link>
             </div>
           </div>
 
@@ -44,7 +49,9 @@ class SimpleSlider extends Component {
               <p className="text">
               naturalne świece sojowe
               </p>
+              <Link to='/shop/candles'>
               <CustomButton>Zobacz</CustomButton>
+              </Link>
             </div>
           </div>
           </Slider>

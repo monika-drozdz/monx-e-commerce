@@ -4,6 +4,7 @@ $color-light: #f2f2f2;
 $color-header: #302d2a;
 $color-yellow: #d9af1a;
 $color-light-gray: #c4c4c4;
+$color-dark-pink: #580117;
 
 .main-banner {
   top: 130px;
@@ -21,7 +22,7 @@ $color-light-gray: #c4c4c4;
   }
 
   &.third {
-    background-image: url(../../assets/candle-hand.jpg);
+    background-image: url(../../assets/candle-background3.jpg);
   }
 
   &::after {
@@ -32,7 +33,7 @@ $color-light-gray: #c4c4c4;
     width: 100%;
     height: 100%;
     background-color: $color-footer;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 10;
   }
 }
@@ -48,6 +49,7 @@ $color-light-gray: #c4c4c4;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ 
 }
 
 .text {

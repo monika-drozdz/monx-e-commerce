@@ -1,6 +1,8 @@
 $color-light: #f2f2f2;
 $color-pink: #C59B98;
 $color-light-gray: #C4C4C4;
+$color-header: #302D2A;
+$color-dark-pink: #580117;
 
 // .cart-dropdown {
 //     position: absolute;
@@ -62,7 +64,7 @@ $color-light-gray: #C4C4C4;
       height: 100%;
       display: flex;
       flex-direction: row-reverse;
-      overflow: scroll;
+      overflow-x: scroll;
     }
 
     .summarize {
@@ -70,7 +72,7 @@ $color-light-gray: #C4C4C4;
       height: 100%;
       display: flex;
       flex-direction: column;
-      background-color: $color-light-gray; 
+      background-color: $color-header; 
       align-items: center;
       justify-content: space-around;
     }

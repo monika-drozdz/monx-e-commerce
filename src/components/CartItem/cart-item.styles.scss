@@ -1,6 +1,7 @@
 $color-light-gray: #C4C4C4;
 $color-pink: #c59b98;
 $color-header: #302d2a;
+$color-dark-pink: #580117;
 
 // .cart-item {
 //     width: 100%;
@@ -54,12 +55,32 @@ $color-header: #302d2a;
     
     .delete-icon {
       position: absolute;
+      width: 30px;
+      height: 30px;
       top: 4%;
       right: 4%;
-      color: $color-header;
+      color: white;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: $color-light-gray;
+        opacity: 0.8;
+        z-index: -1;
+      }
+
       &:hover {
         cursor: pointer;
-        color: $color-pink;
+        color: $color-dark-pink;
       }
     }
     .item-details {

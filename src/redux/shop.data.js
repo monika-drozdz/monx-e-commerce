@@ -39,8 +39,8 @@ const SHOP_DATA = {
           },
           {
             id: 5,
-            name: 'CYNAMON & JABŁKO"',
-            imageUrl: '/assets2/candle.jpg',
+            name: 'ZESTAW TRZECH ŚWIECZEK',
+            imageUrl: '/assets2/candle-zestaw.jpg',
             price: 28,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -56,7 +56,7 @@ const SHOP_DATA = {
          {
             id: 7,
             name: 'GREJPFRUT & ANYŻ',
-            imageUrl: '',
+            imageUrl: '/assets2/candle.jpg',
             price: 24,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -64,7 +64,7 @@ const SHOP_DATA = {
          {
             id: 8,
             name: 'LAWENDA & NIAOULI',
-            imageUrl: '',//'https://i.ibb.co/1f2nWMM/wolf-cap.png',
+            imageUrl: '/assets2/candle.jpg',
             price: 23,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -79,7 +79,7 @@ const SHOP_DATA = {
           {
             id: 9,
             name: "SÓL HIMALAJSKA",
-            imageUrl: '',
+            imageUrl: '/assets2/salt.jpg',
             price: 25,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -87,7 +87,7 @@ const SHOP_DATA = {
          {
             id: 10,
             name: 'LAWENDA',
-            imageUrl: '',
+            imageUrl: '/assets2/salt.jpg',
             price: 32,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -95,7 +95,7 @@ const SHOP_DATA = {
          {
             id: 11,
             name: 'BEZ & PALMAROSA',
-            imageUrl: '',
+            imageUrl: '/assets2/salt.jpg',
             price: 35,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -103,7 +103,7 @@ const SHOP_DATA = {
          {
             id: 12,
             name: 'CYTRYNA & MIĘTA',
-            imageUrl: '',
+            imageUrl: '/assets2/salt.jpg',
             price: 28,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -111,7 +111,7 @@ const SHOP_DATA = {
           {
             id: 13,
             name: 'CYNAMON & JABŁKO"',
-            imageUrl: '',
+            imageUrl: '/assets2/salt.jpg',
             price: 28,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -119,7 +119,7 @@ const SHOP_DATA = {
          {
             id: 14,
             name: 'EUKALIPTUS & MANDARYNKA',
-            imageUrl: '',
+            imageUrl: '/assets2/salt.jpg',
             price: 22,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -127,7 +127,7 @@ const SHOP_DATA = {
           {
             id: 15,
             name: 'GREJPFRUT & ANYŻ',
-            imageUrl: '',
+            imageUrl: '/assets2/salt.jpg',
             price: 24,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -135,7 +135,7 @@ const SHOP_DATA = {
          {
             id: 16,
             name: 'LAWENDA & NIAOULI',
-            imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
+            imageUrl: '/assets2/salt.jpg',
             price: 23,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -150,40 +150,40 @@ const SHOP_DATA = {
           
         {
             id: 17,
-            name: "POMARAŃCZA & GOŹDZIKI",
-            imageUrl: '/assets2/bathBombs.jpg',//'../../../public/assets2/candle.jpg',
+            name: "PIWONIA & MAGNOLIA",
+            imageUrl: '/assets2/kula2.jpg',//'../../../public/assets2/candle.jpg',
             price: 25,
             description: "Pyszna pomarancza ancza",
             ingredients: 'pomarancza plus arancza'
           },
          {
             id: 18,
-            name: 'LAWENDA',
-            imageUrl: '/assets2/bathBombs.jpg',
+            name: 'MANDARYNKA & GREJPFRUT',
+            imageUrl: '/assets2/kula3.jpg',
             price: 32,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
           },
           {
             id: 19,
-            name: 'BEZ & PALMAROSA',
-            imageUrl: '/assets2/bathBombs.jpg',
+            name: 'MANDARYNKA',
+            imageUrl: '/assets2/kula4.jpg',
             price: 35,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
           },
          {
             id: 20,
-            name: 'CYTRYNA & MIĘTA',
-            imageUrl: '',
-            price: 28,
+            name: 'ZESTAW TRZECH KUL',
+            imageUrl: '/assets2/3kule.jpg',
+            price: 30,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
           },
           {
             id: 21,
-            name: 'CYNAMON & JABŁKO"',
-            imageUrl: '',
+            name: 'CYNAMON & JABŁKO',
+            imageUrl: '/assets2/kula2.jpg',
             price: 28,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -191,7 +191,7 @@ const SHOP_DATA = {
           {
             id: 22,
             name: 'EUKALIPTUS & MANDARYNKA',
-            imageUrl: '',
+            imageUrl: '/assets2/kula4.jpg',
             price: 22,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -199,7 +199,7 @@ const SHOP_DATA = {
          {
             id: 23,
             name: 'GREJPFRUT & ANYŻ',
-            imageUrl: '',
+            imageUrl: '/assets2/kula2.jpg',
             price: 24,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -207,22 +207,22 @@ const SHOP_DATA = {
          {
             id: 24,
             name: 'LAWENDA & NIAOULI',
-            imageUrl: '',//'https://i.ibb.co/1f2nWMM/wolf-cap.png',
+            imageUrl: '/assets2/kula3.jpg',
             price: 23,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
           },
         ]
       },
-     akcesoria: {
+     zapachy: {
         id: 4,
-        title: 'Akcesoria',
-        routeName: 'akcesoria',
+        title: 'Zapachy',
+        routeName: 'zapachy',
         items: [
         {
             id: 25,
             name: "POMARAŃCZA & GOŹDZIKI",
-            imageUrl: '/assets2/candle.jpg',//'../../../public/assets2/candle.jpg',
+            imageUrl: '/assets2/zapach.jpg',//'../../../public/assets2/candle.jpg',
             price: 25,
             description: "Pyszna pomarancza ancza",
             ingredients: 'pomarancza plus arancza'
@@ -230,7 +230,7 @@ const SHOP_DATA = {
          {
             id: 26,
             name: 'LAWENDA',
-            imageUrl: '/assets2/bathBombs.jpg',
+            imageUrl: '/assets2/zapach2.jpg',
             price: 32,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -238,7 +238,7 @@ const SHOP_DATA = {
           {
             id: 27,
             name: 'BEZ & PALMAROSA',
-            imageUrl: '',
+            imageUrl: '/assets2/zapach3.jpg',
             price: 35,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -246,15 +246,15 @@ const SHOP_DATA = {
          {
             id: 28,
             name: 'CYTRYNA & MIĘTA',
-            imageUrl: '',
+            imageUrl: '/assets2/zapach.jpg',
             price: 28,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
           },
           {
             id: 29,
-            name: 'CYNAMON & JABŁKO"',
-            imageUrl: '',
+            name: 'CYNAMON & JABŁKO',
+            imageUrl: '/assets2/zapach2.jpg',
             price: 28,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -262,7 +262,7 @@ const SHOP_DATA = {
           {
             id: 30,
             name: 'EUKALIPTUS & MANDARYNKA',
-            imageUrl: '',
+            imageUrl: '/assets2/zapach.jpg',
             price: 22,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -270,7 +270,7 @@ const SHOP_DATA = {
          {
             id: 31,
             name: 'GREJPFRUT & ANYŻ',
-            imageUrl: '',
+            imageUrl: '/assets2/zapach3.jpg',
             price: 24,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'
@@ -278,7 +278,7 @@ const SHOP_DATA = {
          {
             id: 32,
             name: 'LAWENDA & NIAOULI',
-            imageUrl: '',//'https://i.ibb.co/1f2nWMM/wolf-cap.png',
+            imageUrl: '/assets2/zapach2.jpg',
             price: 23,
             description: 'Kajluri vanill',
             ingredients: 'Sól z morza Martwego, sól himalajska, olejek jojoba, olejek makadamia, olejki eteryczne: bez, magnolia, płatki suszonych kwiatów'

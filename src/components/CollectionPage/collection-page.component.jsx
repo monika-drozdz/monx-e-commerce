@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
+
 import CollectionItem from '../CollectionItem/collection-item.component';
 
-import Logo from "../Logo/logo.component";
-import {BrowserRouter as Router, Route, Link, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux'; 
-
 import { selectCollection } from '../../redux/shop/shop.selectors';
-
 
 import './collection-page.styles.scss';
 
