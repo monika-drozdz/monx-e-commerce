@@ -16,7 +16,9 @@ const CartItem = ({ item, clearItem }) => {
 		<div className="cart-item">
 			<div
 				className="cart-image"
-				style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${imageUrl})` }}
+				style={{
+					backgroundImage: `url(/${process.env.PUBLIC_URL}${imageUrl})`,
+				}}
 			></div>
 			<div className="delete-icon">
 				<ClearIcon
