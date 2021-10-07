@@ -15,7 +15,7 @@ import {
 const CheckoutPage = ({ cartItems, total }) => (
 	<div className="checkout-page">
 		<div className="cart-container">
-			<div className="row">
+			{/* <div className="row">
 				<div className="header-row">
 					<span>ZDJĘCIE</span>
 				</div>
@@ -31,7 +31,7 @@ const CheckoutPage = ({ cartItems, total }) => (
 				<div className="header-row">
 					<span>USUŃ</span>
 				</div>
-			</div>
+			</div> */}
 			{cartItems.length ? (
 				cartItems.map((cartItem) => (
 					<CheckoutItem key={cartItem.id} cartItem={cartItem} />

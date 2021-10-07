@@ -14,31 +14,39 @@ const CheckoutItem = ({ cartItem, addItem, removeItem, clearItem }) => {
 	const { name, imageUrl, price, quantity } = cartItem;
 	return (
 		<div className="checkout-item">
-			<div className="image-container">
-				<img src={`${process.env.PUBLIC_URL}${imageUrl}`} alt="item" />
+			<div className="item-information">
+				<div className="image-container">
+					<img src={`${process.env.PUBLIC_URL}${imageUrl}`} alt="item" />
+				</div>
+				<span className="name">{name}</span>
 			</div>
-			<span className="name">{name}</span>
-			<div className="quantity">
-				<div className="qty-button">
-					<div className="minus-plus-btn" onClick={() => removeItem(cartItem)}>
-						<span>&#45;</span>
+			<div className="order-information">
+				<div className="quantity">
+					<div className="qty-button">
+						<div
+							className="minus-plus-btn"
+							onClick={() => removeItem(cartItem)}
+						>
+							<span>&#45;</span>
+						</div>
+						<span className="value">{quantity}</span>
+						<div className="minus-plus-btn" onClick={() => addItem(cartItem)}>
+							<span>&#43;</span>
+						</div>
 					</div>
-					<span className="value">{quantity}</span>
-					<div className="minus-plus-btn" onClick={() => addItem(cartItem)}>
-						<span>&#43;</span>
-					</div>
+				</div>
+
+				<span className="price">{price}PLN</span>
+				<div className="delete-icon">
+					<ClearIcon
+						onClick={() => {
+							clearItem(cartItem);
+							toast.dark("Usunięto z koszyka!");
+						}}
+					/>
 				</div>
 			</div>
 
-			<span className="price">{price}PLN</span>
-			<div className="delete-icon">
-				<ClearIcon
-					onClick={() => {
-						clearItem(cartItem);
-						toast.dark("Usunięto z koszyka!");
-					}}
-				/>
-			</div>
 			<ToastContainer position="bottom-right" autoClose={2000} />
 		</div>
 	);
