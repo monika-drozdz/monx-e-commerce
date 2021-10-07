@@ -14,7 +14,7 @@ import { selectCartItemsCount } from "../../redux/cart/cart.selectors";
 const Header = ({ hidden, toggleCartHidden, itemCount }) => {
 	return (
 		<div className="header">
-			<Link to={process.env.PUBLIC_URL + "/"}>
+			<Link to="/">
 				<h2>Monx</h2>
 			</Link>
 			<HamburgerMenu />

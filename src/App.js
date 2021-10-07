@@ -8,18 +8,19 @@ import Footer from './components/Footer/footer.component';
 import ShopPage from './components/ShopPage/shop-page.component';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.component';
 
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 import CheckoutPage from './components/CheckoutPage/checkout-page.component';
 
 
 const App = () =>(
 <div className="app">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <ScrollToTop/>
       <Header/>
         <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={Homepage} />
+        <Route exact path='/' component={Homepage} />
           <Route path='/shop' component={ShopPage} />
           <Route exact path='/checkout' component={CheckoutPage} />
           <Route exact path="/signin" component={SignIn}/>
