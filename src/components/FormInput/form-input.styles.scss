@@ -1,57 +1,54 @@
-$sub-color: grey;
-$main-color: black;
-$color-pink: #C59B98;
-$color-dark-pink: #580117;
+@import "../../styles/colors.scss";
 
 @mixin shrinkLabel {
-  top: -14px;
-  font-size: 12px;
-  color: $color-dark-pink;
+	top: -14px;
+	font-size: 12px;
+	color: $color-dark-pink;
 }
 
 .group {
-  position: relative;
-  margin: 45px 0;
-  font-family: 'Cutive Mono';
-  .form-input {
-    background: none;
-    
-    color: $color-pink;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid $color-dark-pink;
-    margin: 25px 0;
+	position: relative;
+	margin: 45px 0;
+	font-family: "Kanit", sans-serif;
 
-    &:focus {
-      outline: none;
-    }
+	.form-input {
+		background: none;
+		color: $color-pink;
+		font-size: 18px;
+		padding: 10px 10px 10px 5px;
+		display: block;
+		width: 100%;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid $color-pink;
+		margin: 25px 0;
 
-    &:focus ~ .form-input-label {
-      @include shrinkLabel();
-    }
-  }
+		&:focus {
+			outline: none;
+		}
 
-  input[type="password"] {
-    letter-spacing: 0.3em;
-  }
+		&:focus ~ .form-input-label {
+			@include shrinkLabel();
+		}
+	}
 
-  .form-input-label {
-    color: $color-pink;
-    font-family: 'Cutive Mono';
-    font-size: 16px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 300ms ease all;
+	input[type="password"] {
+		letter-spacing: 0.3em;
+	}
 
-    &.shrink {
-      @include shrinkLabel();
-    }
-  }
+	.form-input-label {
+		color: $color-pink;
+		font-family: "Kanit", sans-serif;
+		font-size: 16px;
+		font-weight: normal;
+		position: absolute;
+		pointer-events: none;
+		left: 5px;
+		top: 10px;
+		transition: 300ms ease all;
+
+		&.shrink {
+			@include shrinkLabel();
+		}
+	}
 }

@@ -1,46 +1,65 @@
-$color-pink: #C59B98;
-$color-dark-pink: #580117;
-$color-yellow: #d9af1a;
+@import "../../styles/colors.scss";
 
 .custom-button {
-    min-width: 165px;
-    width: auto;
-    height: 50px;
-    letter-spacing: 0.5px;
-    line-height: 50px;
-    padding: 0 35px 0 35px;
-    font-size: 17px;
-    background-color: $color-dark-pink;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Unica One';
-    border: none;
-    z-index: 200;
-    
-    cursor: pointer;
-  
-    &.google-sign-in {
-      background-color: #4285f4;
-      color: white;
-      &:hover {
-        background-color: white;
-        border: none;
-      }
-    }
+	width: auto;
+	letter-spacing: 3px;
+	padding: 0.5em 2em;
+	font-size: 1;
+	text-transform: uppercase;
+	z-index: 200;
+	align-content: center;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+	position: relative;
+	border: 1px solid $color-pink;
+	background: none;
+	color: $color-pink;
+	font-family: "Kanit", sans-serif;
+	font-weight: bold;
+	&:hover {
+		background: $color-pink;
+		color: $color-light;
+	}
 
-    &.go-to-checkout {
-      background-color: $color-pink
-    }
-  
-    
+	&.google-sign-in {
+		color: $color-light;
+		background-color: $goggle;
+		border: 1px solid $goggle;
 
-    &:hover {
-      background-color: white;
-      color: $color-dark-pink;
-    }
+		&:hover {
+			background: transparent;
+			color: $goggle;
+		}
+	}
 
-    &:focus {
-      outline: none;
-    }
-  }
-  
+	&.go-to-checkout {
+		background-color: $color-pink;
+	}
+
+	&.menu-button {
+		font-size: 0.8em;
+	}
+
+	&.category-btn {
+		background: $color-pink;
+		color: $color-light;
+
+		&:hover {
+			background: none;
+			color: $color-pink;
+		}
+	}
+	&.footer-btn {
+		font-size: 0.8em;
+		border: transparent;
+		text-align: left;
+		padding: 0.5em;
+		&:hover {
+			color: $color-light;
+			background: transparent;
+		}
+	}
+}

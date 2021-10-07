@@ -1,0 +1,66 @@
+@import "../../styles/colors.scss";
+
+.navbar {
+	background: $color-pink;
+	margin-top: 1em;
+	padding: 1em 2em;
+	ul {
+		li {
+			color: $color-light;
+			margin: 1em 0;
+			position: relative;
+			span {
+				position: relative;
+
+				&:after {
+					transition: width 0.4s ease 0s, left 0.4s ease 0s;
+					content: "";
+					bottom: 0;
+					height: 1px;
+					left: 50%;
+					position: absolute;
+					background: $color-light;
+					width: 0;
+					opacity: 0.6;
+				}
+
+				&:hover:after {
+					width: 100%;
+					left: 0;
+				}
+			}
+		}
+	}
+}
+
+.hor-line {
+	background-color: $color-light;
+	border: none;
+	height: 1px;
+}
+.category {
+	padding: 0.8em 1em;
+	// font-size: 18px;
+
+	text-align: center;
+	margin: 0.5em;
+	&:last-of-type {
+		border: 2px solid $color-light;
+		// border-radius: 100px;
+	}
+}
+
+// .navbar {
+// 	display: flex;
+// 	// flex-direction: column;
+// 	justify-content: center;
+// 	flex-wrap: wrap;
+// 	// text-decoration: none;
+// 	// position: relative;
+// 	// display: inline-block;
+// 	// color: $color-light;
+// 	// font-weight: bold;
+// 	// letter-spacing: 2px;
+// 	// font-family: "Kanit", sans-serif;
+
+// }

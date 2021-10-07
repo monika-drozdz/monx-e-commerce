@@ -1,48 +1,50 @@
-$color-pink: #C59B98;
-$color-dark-pink: #580117;
-$color-footer: #494949;
-$color-light-gray: #C4C4C4;
-$color-yellow: #D9AF1A;
+@import "../../styles/colors.scss";
 
-.cart-container {
-    width: 75%;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 200px auto 100px;
-    font-family: "Unica One";
-    color: $color-footer;
-   
-    .row {
-        width: 100%;
-        padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid $color-footer;
-    }
-    
-    
-    .header-row {
-        width: 21%;
-        display: flex; 
-        justify-content: center;
-        color: $color-dark-pink;
-        &:last-child {
-            width: 16%; 
-        }
-    }
+.checkout-page {
+	z-index: 1;
 
-    .total {
-        margin-top: 30px;
-        margin-left: auto;
-        font-size: 36px;
-      }
-    
+	.cart-container {
+		width: 75%;
+		min-height: 90vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 200px auto 100px;
+		font-family: "Kanit", sans-serif;
+		font-weight: bold;
+		color: $color-header;
+
+		.row {
+			width: 100%;
+			padding: 1em 0;
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid $color-light-gray;
+			.header-row {
+				width: 21%;
+				display: flex;
+				justify-content: center;
+				color: $color-pink;
+
+				&:last-child {
+					width: 16%;
+				}
+			}
+		}
+		.total {
+			margin-top: 30px;
+			margin-left: auto;
+			font-size: 20px;
+		}
+	}
 }
 
-
-
-
-
-
+.empty {
+	margin: 1em auto;
+	span {
+		font-size: 2em;
+		font-family: "Kanit", sans-serif;
+		font-weight: bold;
+		color: $color-header;
+	}
+}

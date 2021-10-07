@@ -1,22 +1,44 @@
-$color-footer: #494949;
+@import "../../styles/colors.scss";
 
+.sign-in-out {
+	z-index: 1;
+	background-color: $color-light;
+}
 .sign-in {
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-    margin: 200px;
-    font-family: 'Unica One';
-    
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-    }
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+	// margin: 200px;
+	margin: 10em;
+	border: 1px solid $color-pink;
+	padding: 2em;
 
-    .title {
-      margin: 10px 0;
-    }
-  }
-  
-h2 {
-  color: $color-footer;
-}  
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		> * {
+			width: 100%;
+			margin: 0.5em;
+		}
+	}
+
+	.title {
+		margin: 10px 0;
+	}
+	h2 {
+		color: $color-pink;
+		font-family: "Ephesis", cursive;
+		text-transform: lowercase;
+		font-size: 3em;
+		&::first-letter {
+			text-transform: uppercase;
+		}
+	}
+	span {
+		color: $color-light-gray;
+		font-family: "Kanit", sans-serif;
+		font-weight: bold;
+		font-size: 0.8em;
+	}
+}

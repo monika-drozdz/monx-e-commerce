@@ -1,5 +1,8 @@
-.shop-page {
-    display: flex;
-    flex-direction: column;
+@import "../../styles/colors.scss";
 
+.shop-page {
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	background-color: $color-light;
 }

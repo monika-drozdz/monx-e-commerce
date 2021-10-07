@@ -1,0 +1,42 @@
+@import "../../styles/colors.scss";
+
+.banner {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: $color-pink;
+	padding: 5em;
+}
+
+.extras {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	margin: 2em 0;
+
+	span {
+		font-size: 2em;
+	}
+	h4 {
+		font-family: "Ephesis", cursive;
+		font-size: 2em;
+		font-weight: normal;
+		text-align: center;
+	}
+}
+
+.vertical-line {
+	border-left: 2px solid $color-pink;
+	height: 80px;
+	z-index: 100;
+}
+
+@media screen and (max-width: 1000px) {
+	.banner {
+		flex-direction: column;
+		padding: 3em;
+	}
+}

@@ -1,99 +1,83 @@
-$color-light-gray: #C4C4C4;
-$color-pink: #c59b98;
-$color-header: #302d2a;
-$color-dark-pink: #580117;
+@import "../../styles/colors.scss";
 
-// .cart-item {
-//     width: 100%;
-//     display: flex;
-//     height: 60px;
-//     // margin-bottom: 15px;
-//     padding: 10px 0 10px 0;
-//     border-bottom: 1px solid $color-light-gray;
-    
-  
-//     .cart-image {
-//       width: 30%;
-//       background-position: center;
-//       background-size: cover;
-//       overflow: hidden;
-//     }
-  
-//     .item-details {
-//       width: 70%;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: flex-start;
-//       justify-content: center;
-//       padding: 10px 20px;
-      
-  
-//       .name {
-//         font-size: 16px;
-//       }
-//     }
-//   }
-  
-  .cart-item {
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    
-    // margin-bottom: 15px;
-    // padding: 10px 0 10px 0;
-    position: relative;
-    border-left: 1px solid black;
-    
-  
-    .cart-image {
-      height: 80%;
-      background-position: center;
-      background-size: cover;
-      overflow: hidden;
-    }
-    
-    .delete-icon {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      top: 4%;
-      right: 4%;
-      color: white;
-      z-index: 20;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.cart-item {
+	min-width: 200px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	border-left: 1px solid $color-pink;
+	&:hover {
+		.delete-icon {
+			visibility: visible;
+		}
+		.cart-image:after {
+			opacity: 0.8;
+		}
+	}
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 50%;
-        width: 100%;
-        height: 100%;
-        background-color: $color-light-gray;
-        opacity: 0.8;
-        z-index: -1;
-      }
+	.cart-image {
+		height: 70%;
+		background-position: center;
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $color-header;
+			opacity: 0;
+			transition: 0.5s ease-in-out;
+		}
+	}
 
-      &:hover {
-        cursor: pointer;
-        color: $color-dark-pink;
-      }
-    }
-    .item-details {
-      height: 20%;
-      display: flex;
-      flex-direction: column;
-      
-      justify-content: center;
-      padding: 10px;
-      
-  
-      .name {
-        font-size: 16px;
-      }
-    }
-  }
+	.delete-icon {
+		visibility: hidden;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 4%;
+		right: 4%;
+		color: $color-pink;
+		z-index: 20;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+			border: 2px solid $color-pink;
+			z-index: -1;
+		}
+
+		&:hover {
+			cursor: pointer;
+			color: $color-light;
+			&:before {
+				background-color: $color-pink;
+			}
+		}
+	}
+	.item-details {
+		height: 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 10px;
+
+		span {
+			font-size: 14px;
+		}
+	}
+}
