@@ -19,7 +19,7 @@ const App = () =>(
         <ScrollToTop/>
       <Header/>
         <Switch>
-        <Route exact path='/' component={Homepage} />
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={Homepage} />
           <Route path='/shop' component={ShopPage} />
           <Route exact path='/checkout' component={CheckoutPage} />
           <Route exact path="/signin" component={SignIn}/>

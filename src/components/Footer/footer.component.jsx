@@ -17,7 +17,7 @@ const Footer = () => (
 	<div className="footer">
 		<div className="footer-center">
 			<div className="logo-text">
-				<Link to="/">
+				<Link to={process.env.PUBLIC_URL + "/"}>
 					<h2>Monx</h2>
 				</Link>
 			</div>
