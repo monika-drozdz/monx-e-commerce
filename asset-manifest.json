@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/monx-e-commerce/static/css/main.b7498f00.chunk.css",
-    "main.js": "/monx-e-commerce/static/js/main.58ef3b6d.chunk.js",
-    "main.js.map": "/monx-e-commerce/static/js/main.58ef3b6d.chunk.js.map",
+    "main.js": "/monx-e-commerce/static/js/main.040e7fe8.chunk.js",
+    "main.js.map": "/monx-e-commerce/static/js/main.040e7fe8.chunk.js.map",
     "runtime-main.js": "/monx-e-commerce/static/js/runtime-main.71ccf158.js",
     "runtime-main.js.map": "/monx-e-commerce/static/js/runtime-main.71ccf158.js.map",
     "static/css/2.289b2428.chunk.css": "/monx-e-commerce/static/css/2.289b2428.chunk.css",
@@ -26,6 +26,6 @@
     "static/css/2.289b2428.chunk.css",
     "static/js/2.ef068877.chunk.js",
     "static/css/main.b7498f00.chunk.css",
-    "static/js/main.58ef3b6d.chunk.js"
+    "static/js/main.040e7fe8.chunk.js"
   ]
 }
