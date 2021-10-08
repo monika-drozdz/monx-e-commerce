@@ -3,13 +3,15 @@
 .sign-in-out {
 	z-index: 1;
 	background-color: $color-light;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10em auto;
+	padding: 2em;
 }
 .sign-in {
-	width: 380px;
 	display: flex;
 	flex-direction: column;
-	// margin: 200px;
-	margin: 10em;
 	border: 1px solid $color-pink;
 	padding: 2em;
 
@@ -19,7 +21,7 @@
 		justify-content: space-between;
 		> * {
 			width: 100%;
-			margin: 0.5em;
+			margin-top: 0.5em;
 		}
 	}
 
@@ -40,5 +42,16 @@
 		font-family: "Kanit", sans-serif;
 		font-weight: bold;
 		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.sign-in {
+		h2 {
+			font-size: 2.5em;
+		}
+		span {
+			font-size: 0.6em;
+		}
 	}
 }
